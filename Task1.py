@@ -20,17 +20,12 @@ Print a message:
 """
 
 def get_unique_numbers():
-    text_numbers = set()
-    call_numbers = set()
+    numbers = set()
 
-    for text in texts:
-        text_numbers.add(text[0])
-        text_numbers.add(text[1])
+    for record in texts + calls:
+        numbers.add(record[0])
+        numbers.add(record[1])
 
-        for call in calls:
-            call_numbers.add(call[0])
-            call_numbers.add(call[1])
-
-    print('There are {} different telephone numbers in the records.'.format(len(text_numbers.union(call_numbers))))
+    print('There are {} different telephone numbers in the records.'.format(len(numbers)))
 
 get_unique_numbers()
