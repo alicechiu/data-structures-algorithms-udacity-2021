@@ -36,6 +36,6 @@ def call_time():
         longest_caller = max(calls_dictionary, key=calls_dictionary.get)
         longest_duration = max(calls_dictionary.values())
 
-    print("{} spent the longest time, {} seconds, on the phone during September 2016.").format(longest_caller, longest_duration)
+    print("{} spent the longest time, {} seconds, on the phone during September 2016.".format(longest_caller, longest_duration))
 
 call_time()
