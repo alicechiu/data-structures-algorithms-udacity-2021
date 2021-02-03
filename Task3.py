@@ -63,7 +63,7 @@ def find_bangalore_numbers():
             new_list.add(caller_area_codes(calls[number][1]))
 
     called_codes_list = list(new_list)
-    print('The numbers called by people in Bangalore have codes: {}').format(called_codes_list.sort())
+    print('The numbers called by people in Bangalore have codes: {}'.format(called_codes_list.sort()))
 
     for sender in called_codes_list:
         print(sender)
@@ -81,7 +81,7 @@ def call_percentage():
             if calls[number][1].startswith('(080)'):
                 count2 += 1
 
-    print('{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.'.format(round(count2 / count1*100),2))
+    print('{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.'.format(round(count2 * 100 / count1, 2)))
 
 call_percentage()
 
