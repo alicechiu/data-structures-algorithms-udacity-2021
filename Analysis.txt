@@ -4,24 +4,23 @@ perform a run time analysis (Worst Case Big-O Notation) of your solution.
 Document this for each problem and include this in your submission
 
 ##Task0
-O(n) or O(1) would best represent the solution since we only need to access calls and texts list
-and selecting the values in their indexed positions. There is no additional computations or nested loops.
+The time complexity for accessing the first and last elements is best represented by O(1). The reason is because we are
+accessing the first and last records of the list. Regardless of the list size, we can instantly
+retrieve the first and last records.
 
 ##Task1
 The code is using O(n^2) since there are nested loops.
 
 ##Task2
-The for loop will be O(n) linear time. As for the if-not-in statements, it has O(n) time because
-the code has to iterate through the list to see if the values are in the list or not. In addition, since
-the block of code is nested within the for loop, it has O(n^2) notation.
+The for loop and if-not-in statements has O(n) time complexity since we are iterating
+through the dictionary to see if the values are in the list or not. The time it takes to iterate
+is relative to the size of calls list.
 
 ##Task3
-For Part A solution, in the first function where there are 3 if-statements, there
-is just one input that is being passed in so it is O(1) time notation.
-
-In the second function, the for loop has linear time so O(n).
+The for loop has O(1) time complexity due to getting the length of the calls list. Then, in the sort
+function, it has O(n logn) time complexity due to the fact that we are dividing the new list
+and rearranging it in ascending order.
 
 ##Task4
-The for loop can be expressed in linear time as O(n). In the nested if-statement, each record
-will be compared against 3 columns to see if it exists so O(n) time. Once we get to the sort,
-it will be O(n log n) time complexity since we are sorting the list ascending.
+The worst case time complexity is O(n^2) due to the nested loop to find if a particular
+element exists in the list or not.

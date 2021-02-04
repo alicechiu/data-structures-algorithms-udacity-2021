@@ -25,22 +25,20 @@ Print a message:
 The list of numbers should be print out one per line in lexicographic order with no duplicates.
 """
 def suspect_telemarketers():
-    call_senders = set([record[0] for record in calls])
-    call_receivers = set([record[1] for record in calls])
-    text_senders = set([record[0] for record in texts])
-    text_receivers = set([record[1] for record in texts])
+    callers = set()
+    other_numbers = set()
 
-    telemarketers = []
+    for call in calls:
+        callers.add(call[0])
+        other_numbers.add(call[1])
 
-    for call_sender in call_senders:
-        if (call_sender not in call_receivers and call_sender not in text_senders and
-                call_sender not in text_receivers):
-            telemarketers.append(call_sender)
+    for text in texts:
+        other_numbers.add(text[0])
+        other_numbers.add(text[1])
 
-    telemarketers.sort()
+    tele = callers - other_numbers
 
-    print('\nThese numbers could be telemarketers:')
-    for telemarketer in telemarketers:
-        print(telemarketer)
+    for num in sorted(tele):
+        print(num)
 
 suspect_telemarketers()

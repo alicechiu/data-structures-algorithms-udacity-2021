@@ -81,7 +81,7 @@ def call_percentage():
             if calls[number][1].startswith('(080)'):
                 count2 += 1
 
-    print('{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.'.format(round(count2 * 100 / count1, 2)))
+    print('{} percent of calls from fixed lines in Bangalore are calls to other fixed lines in Bangalore.'.format(round(count2 / count1*100, 2)))
 
 call_percentage()
 
