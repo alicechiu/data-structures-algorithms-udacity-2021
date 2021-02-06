@@ -9,7 +9,7 @@ accessing the first and last records of the list. Regardless of the list size, w
 retrieve the first and last records.
 
 ##Task1
-The code is using O(n^2) since there are nested loops.
+The for loop has O(n) time complexity since it is iterating through two lists.
 
 ##Task2
 The for loop and if-not-in statements has O(n) time complexity since we are iterating
@@ -22,5 +22,5 @@ function, it has O(n logn) time complexity due to the fact that we are dividing 
 and rearranging it in ascending order.
 
 ##Task4
-The worst case time complexity is O(n^2) due to the nested loop to find if a particular
-element exists in the list or not.
+The for loop has O(n) time complexity and for the sorted function, it has 0(n logn) time
+complexity since we are sorting the new list in ascending order.
