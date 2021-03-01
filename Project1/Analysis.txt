@@ -1,0 +1,26 @@
+#Step 3 - Calculate Big O
+Once you have completed your solution for each problem,
+perform a run time analysis (Worst Case Big-O Notation) of your solution.
+Document this for each problem and include this in your submission
+
+##Task0
+The time complexity for accessing the first and last elements is best represented by O(1). The reason is because we are
+accessing the first and last records of the list. Regardless of the list size, we can instantly
+retrieve the first and last records.
+
+##Task1
+The for loop has O(n) time complexity since it is iterating through two lists.
+
+##Task2
+The for loop and if-not-in statements has O(n) time complexity since we are iterating
+through the dictionary to see if the values are in the list or not. The time it takes to iterate
+is relative to the size of calls list.
+
+##Task3
+The for loop has O(1) time complexity due to getting the length of the calls list. Then, in the sort
+function, it has O(n logn) time complexity due to the fact that we are dividing the new list
+and rearranging it in ascending order.
+
+##Task4
+The for loop has O(n) time complexity and for the sorted function, it has 0(n logn) time
+complexity since we are sorting the new list in ascending order.
